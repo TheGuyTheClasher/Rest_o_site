@@ -1,0 +1,79 @@
+body{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+p{
+    padding: 3px;
+    margin: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container{
+    margin-top: 50px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-img{
+    width: 120px;
+    height: 105px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.753);
+}
+
+.btn-add-to-plate{
+    width: 120px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: blanchedalmond;
+    border: none;
+    outline-style: none;
+}
+
+.main-menu-img{
+    width: 60px;
+    height: 60px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px){
+
+.btn-add-to-plate{
+    clear: both;
+}
+}
+
+
+@media only screen and (max-width: 500px){
+    
+p{
+    font-size: 15px;
+}
+.btn-add-to-plate{
+    clear: both;
+}
+
+}
+
+@media only screen and (max-width: 390px){
+    
+p{
+    clear: both;
+    margin: 4px 0px 4px 0px;  
+}
+
+.menu-img{
+    width: 200px;
+    height: 150px;
+}
+}

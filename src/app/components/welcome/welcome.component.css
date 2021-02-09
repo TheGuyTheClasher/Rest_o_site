@@ -1,0 +1,21 @@
+body{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+    /* font: .9em/1.2 Arial, Helvetica, sans-serif; */
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

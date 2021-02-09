@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="main-container">
+        <div class="reservation-text">
+            <img src="../../../assets/wedding.png" alt="Reservation">
+            <h2>Reservations</h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, fugiat. Rem facilis maxime officiis
+                ullam
+            </p>
+            <p>voluptate vel nobis quia fugiat suscipit earum, temporibus consequatur vitae ipsam animi laboriosam
+                debitis
+                voluptas.</p>
+        </div>
+
+        <form [formGroup]="reservation_form" (ngSubmit)="onSubmitRegestration(reservation_form.value)"
+            class="reservation-form">
+            <div class="name-div">
+                <p class="top-label">Name:<span class="asterix">*</span> </p>
+                <input type="text" name="first_name" formControlName="first_name" placeholder="first name">
+                <input type="text" name="last_name" formControlName="last_name" placeholder="last name">
+
+            </div>
+            <div>
+                <p class="top-label">Phone:<span class="asterix">*</span></p>
+                <input type="text" name="phone_number" formControlName="phone_number" placeholder="Phone number">
+            </div>
+            <div>
+                <p class="top-label">Email:<span class="asterix">*</span></p>
+                <input type="text" name="email" formControlName="email" placeholder="Email">
+            </div>
+            <div class="form-date">
+                <p class="top-label">Date:<span class="asterix">*</span></p>
+                <input type="text" bsDatepicker [bsConfig]="{ isAnimated: true }" name="date" formControlName="date"
+                    placeholder="Choose date">
+            </div>
+
+            <div>
+                <p class="top-label">Number of guests:<span class="asterix">*</span></p>
+                <input type="number" placeholder="Select number" formControlName="number_of_guests"
+                    name="number_of_guests">
+            </div>
+            <div>
+                <p class="top-label">Comments:</p>
+                <input type="text" name="comments" formControlName="comments" placeholder="Comments here">
+            </div>
+            <div>
+                <button class="reservation-submit" type="submit">SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.contact-number{
+font-size: 30px;
+}
+
+.contact-div p{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-body{
+display: flex;
+}
+
+.contact-text, .contact-form{
+    flex: 1;
+}
+
+.contact-form form{
+    margin-left: 40px;
+}
+
+input{
+    padding: 7px;
+    width: 14.7rem;
+    border: none;
+outline: none;
+/* border: 1px solid  ; */
+border-left: 3px solid rgba(0, 0, 0, 0.753);
+border-right: 1px solid rgba(0, 0, 0, 0.753);
+border-top: 1px solid rgba(0, 0, 0, 0.753);
+border-bottom: 1px solid rgba(0, 0, 0, 0.753);
+border-radius: 5px;
+
+}
+
+textarea{
+    border: none;
+outline: none;
+/* border: 1px solid  ; */
+border-left: 3px solid rgba(0, 0, 0, 0.753);
+border-right: 1px solid rgba(0, 0, 0, 0.753);
+border-top: 1px solid rgba(0, 0, 0, 0.753);
+border-bottom: 1px solid rgba(0, 0, 0, 0.753);
+border-radius: 5px;
+}
+
+input::placeholder{
+     font-family: 'Montserrat', sans-serif;
+}
+
+.send-btn{
+    display: block;
+     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+width: 80px;
+    padding: 8px 10px 8px 10px;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .contact-body{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-form form{
+    margin-left: 0px;
+}
+
+.contact-text{
+    width: 70%;
+}
+
+.contact-text, .contact-form, .contact-header{
+    margin-left: 70px;
+}
+}
+
+@media only screen and (max-width: 500px){
+    .contact-body{
+        display: flex;
+        flex-direction: column;
+
+}
+
+    .contact-form form{
+    margin-left: 0px;
+}
+
+.contact-text{
+    width: 70%;
+}
+
+.contact-text, .contact-form, .contact-header{
+    margin-left: 40px;
+}
+/* input{
+    width: 12rem;
+} */
+}

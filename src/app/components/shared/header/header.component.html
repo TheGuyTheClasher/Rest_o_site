@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header-naavigation">
+
+        <div class="left-lot">
+            <ul class="left-lot-1">
+                <li> <a [routerLink]="['welcome']">Welcome</a> </li>
+                <li> <a [routerLink]="['menu']">Menu</a> </li>
+            </ul>
+        </div>
+
+        <div class="middle-lot">
+            <h1>Hungerr..</h1>
+        </div>
+
+        <div class="right-lot">
+            <ul class="right-lot-2">
+                <li> <a [routerLink]="['reservations']">Reservations</a> </li>
+                <li> <a [routerLink]="['order']">Order</a> </li>
+                <li> <a [routerLink]="['contact']">Contact</a> </li>
+
+                <img src="../../../../assets/food-tray.png" alt="">
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
